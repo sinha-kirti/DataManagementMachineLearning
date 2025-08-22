@@ -1,0 +1,5 @@
+2025-08-22 22:03:46,961 [INFO] Starting Kaggle dataset Ingestion
+2025-08-22 22:03:48,712 [INFO] Downloaded Kaggle dataset to data_raw\kaggle\2025-08-22
+2025-08-22 22:03:48,712 [INFO] Starting GitHub dataset Ingestion
+2025-08-22 22:03:49,620 [INFO] Downloaded GitHub dataset to data_raw\github\2025-08-22
+2025-08-22 22:03:49,620 [INFO] Ingestion complete.

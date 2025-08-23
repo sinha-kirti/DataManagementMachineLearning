@@ -1,0 +1,18 @@
+=== Data Transformation Change Log ===
+Date: 2025-08-24
+
+Data Shapes:
+- Raw data shape: (7043, 22)
+- Transformed data shape: (7043, 25)
+
+Column Changes:
+- New columns added: AvgSpendPerMonth, TenureGroup, TotalSpend
+- Columns removed: None
+
+Feature Engineering Steps:
+1. Total Spend calculation: tenure * MonthlyCharges
+2. Tenure Groups created with bins: [0, 12, 24, 48, 60, max_tenure]
+3. Average Spend Per Month: TotalCharges / tenure
+
+Normalization:
+- StandardScaler applied to numeric columns: AvgSpendPerMonth, Contract, Dependents, DeviceProtection, InternetService, MonthlyCharges, MultipleLines, OnlineBackup, OnlineSecurity, PaperlessBilling, Partner, PaymentMethod, PhoneService, SeniorCitizen, StreamingMovies, StreamingTV, TechSupport, TotalCharges, TotalSpend, gender, tenure

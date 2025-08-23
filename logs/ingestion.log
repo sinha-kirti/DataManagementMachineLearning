@@ -1,0 +1,11 @@
+2025-08-23 23:56:15,989 [ERROR] Failed to download Kaggle dataset: No module named 'kaggle'
+2025-08-24 00:02:17,654 [INFO] Starting Kaggle dataset Ingestion
+2025-08-24 00:02:19,758 [INFO] Downloaded Kaggle dataset to data_raw/kaggle/2025-08-24
+2025-08-24 00:02:19,758 [INFO] Starting GitHub dataset Ingestion
+2025-08-24 00:02:20,797 [INFO] Downloaded GitHub dataset to data_raw/github/2025-08-24
+2025-08-24 00:02:20,798 [INFO] Ingestion complete.
+2025-08-24 00:03:34,201 [INFO] Starting Kaggle dataset Ingestion
+2025-08-24 00:03:36,116 [INFO] Downloaded Kaggle dataset to /Users/kirtisinha/DataManagementMachineLearning/DataIngestion/data_raw/kaggle/2025-08-24
+2025-08-24 00:03:36,116 [INFO] Starting GitHub dataset Ingestion
+2025-08-24 00:03:36,546 [INFO] Downloaded GitHub dataset to /Users/kirtisinha/DataManagementMachineLearning/DataIngestion/data_raw/github/2025-08-24
+2025-08-24 00:03:36,546 [INFO] Ingestion complete.

@@ -136,7 +136,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contact
 
 Kirti Sinha - 2024da04194@wilp.bits-pilani.ac.in
+
 Chandana Bonagiri - 2024da04196@wilp.bits-pilani.ac.in
+
 Vadde Praveen - 2024da04203@wilp.bits-pilani.ac.in
 
 

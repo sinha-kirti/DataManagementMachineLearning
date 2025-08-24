@@ -2,6 +2,14 @@
 
 This repository contains a comprehensive end-to-end machine learning pipeline for customer churn prediction, incorporating data management best practices, automated workflows, and model deployment capabilities.
 
+## Contribution Table
+
+|S.NO| NAME	|            BITS ID	|    CONTRIBUTION %|
+|----|------|-----------------------|------------------|
+|1	 |   KIRTI SINHA	 |     2024DA04194|	100%|
+|2	 |   BONAGIRI CHANDANA	| 2024DA04196 |	100%|
+|3   |	 VADDE PRAVEEN  |2024da04203	| 100%|
+
 ## Project Structure
 
 ```

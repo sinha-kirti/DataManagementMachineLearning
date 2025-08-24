@@ -1,0 +1,13 @@
+2025-08-22 22:03:46,961 [INFO] Starting Kaggle dataset Ingestion
+2025-08-22 22:03:48,712 [INFO] Downloaded Kaggle dataset to data_raw\kaggle\2025-08-22
+2025-08-22 22:03:48,712 [INFO] Starting GitHub dataset Ingestion
+2025-08-22 22:03:49,620 [INFO] Downloaded GitHub dataset to data_raw\github\2025-08-22
+2025-08-22 22:03:49,620 [INFO] Ingestion complete.
+2025-08-23 23:00:28,713 [ERROR] Failed to download Kaggle dataset: No module named 'kaggle'
+2025-08-23 23:07:25,187 [ERROR] Failed to download Kaggle dataset: Could not find kaggle.json. Make sure it's located in /Users/adityasinha/.kaggle. Or use the environment method. See setup instructions at https://github.com/Kaggle/kaggle-api/
+2025-08-23 23:09:45,891 [ERROR] Failed to download Kaggle dataset: Error: Missing username in configuration.
+2025-08-23 23:12:03,936 [INFO] Starting Kaggle dataset Ingestion
+2025-08-23 23:12:06,013 [INFO] Downloaded Kaggle dataset to data_raw/kaggle/2025-08-23
+2025-08-23 23:12:06,013 [INFO] Starting GitHub dataset Ingestion
+2025-08-23 23:12:07,111 [INFO] Downloaded GitHub dataset to data_raw/github/2025-08-23
+2025-08-23 23:12:07,111 [INFO] Ingestion complete.

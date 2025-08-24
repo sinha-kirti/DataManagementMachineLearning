@@ -46,12 +46,14 @@ services:
 
   airflow-webserver:
     <<: *airflow-common
-    command: webserver
+    command: >
+      bash -c "airflow db init && airflow webserver"
     ports:
       - "8080:8080"
     restart: always
 
   airflow-scheduler:
     <<: *airflow-common
-    command: scheduler
+    command: >
+      bash -c "airflow db init && airflow scheduler"
     restart: always

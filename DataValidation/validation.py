@@ -100,5 +100,37 @@ def validate_data_and_generate_report(sources, report_file):
             pd.DataFrame({"Message": ["No validation data available"]}).to_excel(writer, sheet_name="Summary")
 
 
+def validate_data_and_generate_json_report(sources, report_file):
+    """
+    Validates datasets and writes the results to a JSON file.
+    """
+    import json
+
+    results_summary = {}
+
+    for name, path in sources.items():
+        results = validate_dataset(name, path)
+        results_summary[name] = {}
+
+        if "Error" in results:
+            results_summary[name]["Error"] = results["Error"]
+            continue
+
+        # Process each validation check
+        for check_name, data in results.items():
+            if isinstance(data, pd.Series):
+                results_summary[name][check_name] = data.to_dict()
+            elif isinstance(data, pd.DataFrame):
+                results_summary[name][check_name] = data.to_dict(orient="records")
+            else:
+                results_summary[name][check_name] = str(data)
+
+    # Write the results to a JSON file
+    with open(report_file, "w") as f:
+        json.dump(results_summary, f, indent=4)
+
+    print(f"Validation results written to {report_file}")
+
+
 # Run validation
-validate_data_and_generate_report(sources, validation_report)
+validate_data_and_generate_json_report(sources, validation_report)

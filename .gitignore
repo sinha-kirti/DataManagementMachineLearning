@@ -1,3 +1,7 @@
 .vscode
 churn_env
 .idea/*
+airflow-churn/dags/*.pyc
+airflow-churn/plugins/*
+airflow-churn/logs/*
+*/__pycache__/*

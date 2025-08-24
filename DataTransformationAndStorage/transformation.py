@@ -1,8 +1,33 @@
 import os
 import pandas as pd
 import duckdb
+import psycopg2
+from psycopg2.extras import RealDictCursor
 from datetime import datetime
 from sklearn.preprocessing import StandardScaler
+
+def get_database_connection():
+    """
+    Returns a database connection object.
+    Uses PostgreSQL if running in Docker, otherwise uses DuckDB.
+    """
+    if os.path.exists("/proc/self/cgroup"):
+        # Assume running in Docker, use PostgreSQL
+        conn = psycopg2.connect(
+            host="postgres",
+            port=5432,
+            user="airflow",
+            password="airflow",
+            dbname="airflow",
+            cursor_factory=RealDictCursor
+        )
+        print("Using PostgreSQL database.")
+        return conn
+    else:
+        # Use DuckDB for local development
+        conn = duckdb.connect(database=":memory:")
+        print("Using DuckDB database.")
+        return conn
 
 def transform_data():
     # ----------------------------
@@ -97,5 +122,18 @@ def transform_data():
     print("\n📌 Sample Queries:")
     for name, q in queries.items():
         print(f"\n{name}:\n{q}")
+
+    conn = get_database_connection()
+    cursor = conn.cursor()
+
+    # Example transformation logic
+    try:
+        cursor.execute("CREATE TABLE IF NOT EXISTS transformed_data (id INT, value TEXT)")
+        cursor.execute("INSERT INTO transformed_data VALUES (1, 'example')")
+        conn.commit()
+        print("Data transformation completed.")
+    finally:
+        cursor.close()
+        conn.close()
 
 transform_data()

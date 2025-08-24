@@ -15,4 +15,4 @@ Feature Engineering Steps:
 3. Average Spend Per Month: TotalCharges / tenure
 
 Normalization:
-- StandardScaler applied to numeric columns: AvgSpendPerMonth, Contract, Dependents, DeviceProtection, InternetService, MonthlyCharges, MultipleLines, OnlineBackup, OnlineSecurity, PaperlessBilling, Partner, PaymentMethod, PhoneService, SeniorCitizen, StreamingMovies, StreamingTV, TechSupport, TotalCharges, TotalSpend, gender, tenure
+- StandardScaler applied to numeric columns: AvgSpendPerMonth, Contract, Dependents, DeviceProtection, InternetService, MonthlyCharges, MultipleLines, OnlineBackup, OnlineSecurity, PaperlessBilling, Partner, PaymentMethod, PhoneService, SeniorCitizen, StreamingMovies, StreamingTV, TechSupport, TotalCharges, TotalSpend, gender, tenure.
